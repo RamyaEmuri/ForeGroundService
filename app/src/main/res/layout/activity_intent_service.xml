@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntentService">
+
+    <TextView
+        android:id="@+id/textViewthreadCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonThreadStarter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/string_startservice"
+        android:background="@drawable/buttonbackground"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewthreadCount"
+        app:layout_constraintStart_toStartOf="@+id/textViewthreadCount"
+        app:layout_constraintTop_toBottomOf="@+id/textViewthreadCount" />
+
+    <Button
+        android:id="@+id/buttonStopthread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/string_stopservice"
+        android:background="@drawable/buttonbackground"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonThreadStarter"
+        app:layout_constraintStart_toStartOf="@+id/buttonThreadStarter"
+        app:layout_constraintTop_toBottomOf="@+id/buttonThreadStarter" />
+
+    <Button
+        android:id="@+id/buttonBindService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/string_bind"
+        android:background="@drawable/buttonbackground"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonStopthread"
+        app:layout_constraintStart_toStartOf="@+id/buttonStopthread"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStopthread" />
+
+    <Button
+        android:id="@+id/buttonUnBindService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/string_unbind"
+        android:background="@drawable/buttonbackground"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonBindService"
+        app:layout_constraintStart_toStartOf="@+id/buttonBindService"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBindService" />
+
+    <Button
+        android:id="@+id/buttonGetRandomNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/string_getrandom_number"
+        android:background="@drawable/buttonbackground"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonUnBindService"
+        app:layout_constraintStart_toStartOf="@+id/buttonUnBindService"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUnBindService" />
+</androidx.constraintlayout.widget.ConstraintLayout>
